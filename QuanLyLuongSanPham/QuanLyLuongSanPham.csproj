@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Forms.2.5.1.527436\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.5.1.527436\build\netstandard1.0\Xamarin.Forms.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4EE6E64-FE1A-4436-87EC-20F1740AD344}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyLuongSanPham</RootNamespace>
+    <AssemblyName>QuanLyLuongSanPham</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Core.XForms, Version=16.4451.0.54, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.Core.16.4.0.54\lib\netstandard1.0\Syncfusion.Core.XForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.DataSource.Portable, Version=16.4451.0.54, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.DataSource.16.4.0.54\lib\netstandard1.0\Syncfusion.DataSource.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.GridCommon.Portable, Version=16.4451.0.54, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.GridCommon.16.4.0.54\lib\netstandard1.0\Syncfusion.GridCommon.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=16.4451.0.54, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.16.4.0.54\lib\net451\Syncfusion.Licensing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfListView.XForms, Version=16.4451.0.54, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfListView.16.4.0.54\lib\netstandard1.0\Syncfusion.SfListView.XForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.5.1.527436\lib\netstandard1.0\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.5.1.527436\lib\netstandard1.0\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.5.1.527436\lib\netstandard1.0\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsAccountCN.cs" />
+    <Compile Include="clsAccountNV.cs" />
+    <Compile Include="clsCheck.cs" />
+    <Compile Include="clsCongDoan.cs" />
+    <Compile Include="clsCongNhan.cs" />
+    <Compile Include="clsCongXuong.cs" />
+    <Compile Include="clsKetNoi.cs" />
+    <Compile Include="clsLuongCN.cs" />
+    <Compile Include="clsLuongNV.cs" />
+    <Compile Include="clsNhanVien.cs" />
+    <Compile Include="clsPhongBan.cs" />
+    <Compile Include="frmDoiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoiMK.Designer.cs">
+      <DependentUpon>frmDoiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuLuongCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuLuongCN.Designer.cs">
+      <DependentUpon>frmPhieuLuongCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuLuongNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuLuongNV.Designer.cs">
+      <DependentUpon>frmPhieuLuongNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLCN.designer.cs">
+      <DependentUpon>frmQLCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLNV.designer.cs">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLTKCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLTKCN.Designer.cs">
+      <DependentUpon>frmQLTKCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLTKNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLTKNV.Designer.cs">
+      <DependentUpon>frmQLTKNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemCN.Designer.cs">
+      <DependentUpon>frmThemCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemLCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemLCN.Designer.cs">
+      <DependentUpon>frmThemLCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemLNV.Designer.cs">
+      <DependentUpon>frmThemLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemNV.Designer.cs">
+      <DependentUpon>frmThemNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTinhLuongCN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTinhLuongCN.Designer.cs">
+      <DependentUpon>frmTinhLuongCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTinhLuongNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTinhLuongNV.Designer.cs">
+      <DependentUpon>frmTinhLuongNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qlLuongSP.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>qlLuongSP.dbml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmDoiMK.resx">
+      <DependentUpon>frmDoiMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuLuongCN.resx">
+      <DependentUpon>frmPhieuLuongCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuLuongNV.resx">
+      <DependentUpon>frmPhieuLuongNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLCN.resx">
+      <DependentUpon>frmQLCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLNV.resx">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLTKCN.resx">
+      <DependentUpon>frmQLTKCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLTKNV.resx">
+      <DependentUpon>frmQLTKNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemCN.resx">
+      <DependentUpon>frmThemCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemLCN.resx">
+      <DependentUpon>frmThemLCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemLNV.resx">
+      <DependentUpon>frmThemLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemNV.resx">
+      <DependentUpon>frmThemNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTinhLuongCN.resx">
+      <DependentUpon>frmTinhLuongCN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTinhLuongNV.resx">
+      <DependentUpon>frmTinhLuongNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="qlLuongSP.dbml.layout">
+      <DependentUpon>qlLuongSP.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="qlLuongSP.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>qlLuongSP.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-518467688-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2341557-middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chamcong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chamc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3592847-general-office-repair-repair-tool-screwdriver-tools-wrench_107766.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash_icon-icons.com_51090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bootloader_users_person_people_6080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cong-van-so-245-quan-ly-van-ban-di-den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\members-icon_898594396.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bootloader_users_person_people_60801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-conference-centre-meeting-convention-computer-icon-table-5ad6d5691ce8a7.8376823515240287771184.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-management-organization-service-certificafe-5ade141c57fbc3.9985941115245035803604.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-coupon-discounts-and-allowances-voucher-gift-card-coupon-icon-png-at-getdrawings-com-free-coupon-ico-5d07258c075ef5.2177343415607494520302.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-minimum-wage-computer-icons-payroll-salary-icon-salary-free-5ab0ff6d1af283.6596396715215491651104.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-User_icon_2.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-icon-design-business-administration-admin-icon-hand-monochrome-silhouette-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-star-icon-png-image_1611681.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-product-manuals-owners-manual-computer-icons-clip-5c6d1894e68419.7980788815506535889442.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information_icon4.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-excellent-settings-icon-psd-settings-icon-512x152-hammer-and-pencil-digital-art.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-meticulously-designed-customer-care-icon-customer-help-icon-most-important-design-customer-care-icon-customer-help-196168795.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-icon-500x500.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-database-computer-icons-data-management-web-2-blue-data-configuration-icon-free-web-2-bl-5ba3c9c6b81397.421493561537460678754.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-microsoft-azure-sql-database-microsoft-sql-server-5b098c6aafe671.6699247615273524267205.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-backup-data-backup-icon-text-trademark-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\capnhat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\engineer-vector-icon-png_247858.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1269515091_keepassx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lich1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1269515091_keepassx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.5.1.527436\build\netstandard1.0\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.5.1.527436\build\netstandard1.0\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.2.5.1.527436\build\netstandard1.0\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.5.1.527436\build\netstandard1.0\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.2.5.1.527436\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.1.527436\build\netstandard1.0\Xamarin.Forms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
